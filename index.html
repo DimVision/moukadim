@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/tailStyle.css">
+    <link rel="stylesheet" href="./style/custom.css">
+    <title>Moukadim</title>
+</head>
+<body class="bg-gray-900 flex-col mx-auto items-center overflow-x-hidden">
+    <header id="LogoBar" class="h-16 shadow-m w-full">
+        <nav class="flex items-center h-full justify-center p-2">
+           <div class="h-full w-32">
+               <a class="inline-block h-full" href="/index.html">
+                 <img class="w-24 h-full" src="./image/dessin.svg" alt="">
+               </a>
+           </div>
+        </nav>
+    </header>
+    <main class="overflow-x-hidden max-w-3xl mx-auto">
+      <section>
+        <div class="Accueil min-w-full ">
+            <section id="Content" class="relative text-gray-300 my-8">
+                <div class="name text-xl md:text-2xl lg:text-3xl pl-5 lg:mt-16 mt-8">
+                    Moukadim
+                    <span class="block lg:inline-block tracking-wide md:text-2xl lg:text-3xl">Alassani</span>
+                </div>
+                <div class="pt-3 text-lg transform translate-x-1/2 ">
+                    <span>
+                        UI/UX Designer
+                    </span>
+                    <span class="block">
+                        & Développeur
+                    </span>
+                    <span class="block ml-8 tracking-widest">Junior</span>
+                </div>
+                <div class="mt-8 w-full text-gray-900">
+                    <button class="block mx-auto transform -translate-x-16 hello bg-gradient-to-bl from-purple-800 to-red-400 font-semibold text-gray-300  shadow-md tracking-widest  p-1 rounded-tl-lg rounded-br-lg ">Contact!</button>
+                </div>
+          </section>
+        </div>
+        <div id="skills" class="w-full pt-4 ">
+            <span class="text-gray-300 bg-gray-800 text-center shadow-inner rounded-tr-lg rounded-bl-lg w-4/12 transform translate-x-8 uppercase font-bold block" >Compétences</span>
+            <div class="SkillsBox flex items-center justify-center flex-wrap mt-4">
+                <div class="SkillsCard flex flex-wrap justify-center w-44">
+                    <div class="svgBox z-20">
+                        <svg height="130" width="130" percent="95" >
+                            <filter id="cShadow" heigh="110%">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="5,9"/> //Specifier le flou gaussien
+                                <feComponentTransfer>
+                                    <feFuncA type="linear" slope="0.1"/> //slope definit l'opacite de l'ombre
+                                </feComponentTransfer>
+                                <feMerge>
+                                    <feMergeNode/> // contient l'image d'espacement de floutage
+                                    <feMergeNode in="SourceGraphic"/> //contient l'element specifier pour flouter specifier ci-dessus
+                                </feMerge>
+                            </filter>
+                            <circle
+                            cx="65"
+                            cy="65"
+                            r="55"
+                            fill="rgb(31,41,55)"
+                            stroke='rgb(99,102,241)'
+                            stroke-width="15"
+                            stroke-dasharray="346"
+                            stroke-dashoffset=346
+                            stroke-linecap="round"
+                            />
+                            <circle
+                            style="filter:url(#cShadow)"
+                            cx="65"
+                            cy="65"
+                            r="50"
+                            fill="rgba(17,24,39)"
+                            stroke="transparent" 
+                        />
+                        <text id="percent" class="hello text-xl" x=45 y=60 fill="whitesmoke" >&nbsp&nbsp%</text>
+                        <text class="hello text-xs font-bold " x=50 y=90 fill="rgb(99,102,241)">HTML</text>
+                        </svg>
+                    </div>
+                    <div class="p-2 w-full text-center text-sm">
+                        <span class="inline-block mx-auto text-gray-200 font-semibold">HTML</span>
+                    </div>
+                </div>
+                <div class="SkillsCard flex flex-wrap justify-center w-44">
+                    <div class="svgBox z-20">
+                        <svg height="130" width="130" percent="85" >
+                            <filter id="cShadow" heigh="110%">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="5,9"/> //Specifier le flou gaussien
+                                <feComponentTransfer>
+                                    <feFuncA type="linear" slope="0.1"/> //slope definit l'opacite de l'ombre
+                                </feComponentTransfer>
+                                <feMerge>
+                                    <feMergeNode/> // contient l'image d'espacement de floutage
+                                    <feMergeNode in="SourceGraphic"/> //contient l'element specifier pour flouter specifier ci-dessus
+                                </feMerge>
+                            </filter>
+                            <circle
+                            cx="65"
+                            cy="65"
+                            r="55"
+                            fill="rgb(31,41,55)"
+                            stroke='rgb(99,102,241)'
+                            stroke-width="15"
+                            stroke-dasharray="346"
+                            stroke-dashoffset=346
+                            stroke-linecap="round"
+                            />
+                            <circle
+                            style="filter:url(#cShadow)"
+                            cx="65"
+                            cy="65"
+                            r="50"
+                            fill="rgba(17,24,39)"
+                            stroke="transparent" 
+                        />
+                        <text id="percent" class="hello text-xl" x=45 y=60 fill="whitesmoke" >&nbsp&nbsp%</text>
+                        <text class="hello text-xs font-bold " x=35 y=90 fill="rgb(99,102,241)" >CSS/CSS3</text>
+                        </svg>
+                    </div>
+                    <div class="p-2 w-full text-center text-sm">
+                        <span class="inline-block mx-auto text-gray-200 font-semibold">Tailwindcss</span>
+                        <span class="inline-block mx-auto text-gray-200 font-semibold">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="SkillsCard flex flex-wrap justify-center w-44">
+                    <div class="svgBox z-20">
+                        <svg height="130" width="130" percent="70" >
+                            <filter id="cShadow" heigh="110%">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="5,9"/> //Specifier le flou gaussien
+                                <feComponentTransfer>
+                                    <feFuncA type="linear" slope="0.1"/> //slope definit l'opacite de l'ombre
+                                </feComponentTransfer>
+                                <feMerge>
+                                    <feMergeNode/> // contient l'image d'espacement de floutage
+                                    <feMergeNode in="SourceGraphic"/> //contient l'element specifier pour flouter specifier ci-dessus
+                                </feMerge>
+                            </filter>
+                            <circle
+                            cx="65"
+                            cy="65"
+                            r="55"
+                            fill="rgb(31,41,55)"
+                            stroke='rgb(99,102,241)'
+                            stroke-width="15"
+                            stroke-dasharray="346"
+                            stroke-dashoffset=346
+                            stroke-linecap="round"
+                            />
+                            <circle
+                            style="filter:url(#cShadow)"
+                            cx="65"
+                            cy="65"
+                            r="50"
+                            fill="rgba(17,24,39)"
+                            stroke="transparent" 
+                        />
+                        <text id="percent" class="hello text-xl" x=45 y=60 fill="whitesmoke" >&nbsp&nbsp%</text>
+                        <text class="hello text-xs font-bold uppercase" x=29 y=90 fill="rgb(99,102,241)">Javascript</text>
+                        </svg>
+                    </div>
+                    <div class="p-2 w-full text-center text-sm">
+                        <span class="inline-block mx-auto text-gray-200 font-semibold">JQuery</span>
+                        <span class="inline-block mx-auto text-gray-200 font-semibold">ReactJS</span>
+                        <span class="inline-block mx-auto text-gray-200 font-semibold">NodeJS</span>
+                    </div>
+                </div>
+                <div class="SkillsCard flex flex-wrap justify-center w-44">
+                    <div class="svgBox z-20">
+                        <svg height="130" width="130" percent="60" >
+                            <filter id="cShadow" heigh="110%">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="5,9"/> //Specifier le flou gaussien
+                                <feComponentTransfer>
+                                    <feFuncA type="linear" slope="0.1"/> //slope definit l'opacite de l'ombre
+                                </feComponentTransfer>
+                                <feMerge>
+                                    <feMergeNode/> // contient l'image d'espacement de floutage
+                                    <feMergeNode in="SourceGraphic"/> //contient l'element specifier pour flouter specifier ci-dessus
+                                </feMerge>
+                            </filter>
+                            <circle
+                            cx="65"
+                            cy="65"
+                            r="55"
+                            fill="rgb(31,41,55)"
+                            stroke='rgb(99,102,241)'
+                            stroke-width="15"
+                            stroke-dasharray="346"
+                            stroke-dashoffset=346
+                            stroke-linecap="round"
+                            />
+                            <circle
+                            style="filter:url(#cShadow)"
+                            cx="65"
+                            cy="65"
+                            r="50"
+                            fill="rgba(17,24,39)"
+                            stroke="transparent" 
+                        />
+                        <text id="percent" class="hello text-xl" x=45 y=60 fill="whitesmoke" >&nbsp&nbsp%</text>
+                        <text class="hello text-xs font-bold uppercase" x=42 y=90 fill="rgb(99,102,241)">SGBDR</text>
+                        </svg>
+                    </div>
+                    <div class="p-2 w-full text-center text-sm">
+                        <span class="inline-block mx-auto text-gray-200 font-semibold">MySQL</span>
+                    </div>
+                </div>
+                <div class="SkillsCard flex flex-wrap justify-center w-44">
+                    <div class="svgBox z-20">
+                        <svg height="130" width="130" percent="65" >
+                            <filter id="cShadow" heigh="110%">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="5,9"/> //Specifier le flou gaussien
+                                <feComponentTransfer>
+                                    <feFuncA type="linear" slope="0.1"/> //slope definit l'opacite de l'ombre
+                                </feComponentTransfer>
+                                <feMerge>
+                                    <feMergeNode/> // contient l'image d'espacement de floutage
+                                    <feMergeNode in="SourceGraphic"/> //contient l'element specifier pour flouter specifier ci-dessus
+                                </feMerge>
+                            </filter>
+                            <circle
+                            cx="65"
+                            cy="65"
+                            r="55"
+                            fill="rgb(31,41,55)"
+                            stroke='rgb(99,102,241)'
+                            stroke-width="15"
+                            stroke-dasharray="346"
+                            stroke-dashoffset=346
+                            stroke-linecap="round"
+                            />
+                            <circle
+                            style="filter:url(#cShadow)"
+                            cx="65"
+                            cy="65"
+                            r="50"
+                            fill="rgba(17,24,39)"
+                            stroke="transparent" 
+                        />
+                        <text id="percent" class="hello text-xl" x=45 y=60 fill="whitesmoke" >&nbsp&nbsp%</text>
+                        <text class="hello text-xs font-bold uppercase" x=53 y=90 fill="rgb(99,102,241)">PHP</text>
+                        </svg>
+                    </div>
+                    <div class="p-2 w-full text-center text-sm">
+                        <span class="inline-block mx-auto text-gray-200 font-semibold">Laravel</span>
+                    </div>
+                </div>
+                <div class="SkillsCard flex flex-wrap justify-center w-44">
+                    <div class="svgBox z-20">
+                        <svg height="130" width="130" percent="50" >
+                            <filter id="cShadow" heigh="110%">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="5,9"/> //Specifier le flou gaussien
+                                <feComponentTransfer>
+                                    <feFuncA type="linear" slope="0.1"/> //slope definit l'opacite de l'ombre
+                                </feComponentTransfer>
+                                <feMerge>
+                                    <feMergeNode/> // contient l'image d'espacement de floutage
+                                    <feMergeNode in="SourceGraphic"/> //contient l'element specifier pour flouter specifier ci-dessus
+                                </feMerge>
+                            </filter>
+                            <circle
+                            cx="65"
+                            cy="65"
+                            r="55"
+                            fill="rgb(31,41,55)"
+                            stroke='rgb(99,102,241)'
+                            stroke-width="15"
+                            stroke-dasharray="346"
+                            stroke-dashoffset=346
+                            stroke-linecap="round"
+                            />
+                            <circle
+                            style="filter:url(#cShadow)"
+                            cx="65"
+                            cy="65"
+                            r="50"
+                            fill="rgba(17,24,39)"
+                            stroke="transparent" 
+                        />
+                        <text id="percent" class="hello text-xl" x=45 y=60 fill="whitesmoke" >&nbsp&nbsp%</text>
+                        <text class="hello text-xs font-bold" x=44 y=90 fill="rgb(99,102,241)">NoSQL</text>
+                        </svg>
+                    </div>
+                    <div class="p-2 w-full text-center text-sm">
+                        <span class="inline-block mx-auto text-gray-200 font-semibold">MongoDB</span>
+                    </div>
+                </div>
+                <div class="SkillsCard flex flex-wrap justify-center w-44">
+                    <div class="svgBox z-20">
+                        <svg height="130" width="130" percent="75" >
+                            <filter id="cShadow" heigh="110%">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="5,9"/> //Specifier le flou gaussien
+                                <feComponentTransfer>
+                                    <feFuncA type="linear" slope="0.1"/> //slope definit l'opacite de l'ombre
+                                </feComponentTransfer>
+                                <feMerge>
+                                    <feMergeNode/> // contient l'image d'espacement de floutage
+                                    <feMergeNode in="SourceGraphic"/> //contient l'element specifier pour flouter specifier ci-dessus
+                                </feMerge>
+                            </filter>
+                            <circle
+                            cx="65"
+                            cy="65"
+                            r="55"
+                            fill="rgb(31,41,55)"
+                            stroke='rgb(99,102,241)'
+                            stroke-width="15"
+                            stroke-dasharray="346"
+                            stroke-dashoffset=346
+                            stroke-linecap="round"
+                            />
+                            <circle
+                            style="filter:url(#cShadow)"
+                            cx="65"
+                            cy="65"
+                            r="50"
+                            fill="rgba(17,24,39)"
+                            stroke="transparent" 
+                        />
+                        <text id="percent" class="hello text-xl" x=45 y=60 fill="whitesmoke" >&nbsp&nbsp%</text>
+                        <text class="hello text-xs font-semibold" x=20 y=85 fill="rgb(99,102,241)">UI/UX DESIGN</text>
+                        </svg>
+                    </div>
+                    <div class="p-2 w-full text-center text-sm">
+                        <span class="inline-block mx-auto text-gray-200 font-semibold">Inkscape</span>
+                        <span class="inline-block mx-auto text-gray-200 font-semibold">Lunacy</span>
+                        <span class="inline-block mx-auto text-gray-200 font-semibold">Adobe XD</span>
+                    </div>
+                </div>
+                <div class="SkillsCard flex flex-wrap justify-center w-44">
+                    <div class="svgBox z-20">
+                        <svg height="130" width="130" percent="35" >
+                            <filter id="cShadow" heigh="110%">
+                                <feGaussianBlur in="SourceAlpha" stdDeviation="5,9"/> //Specifier le flou gaussien
+                                <feComponentTransfer>
+                                    <feFuncA type="linear" slope="0.1"/> //slope definit l'opacite de l'ombre
+                                </feComponentTransfer>
+                                <feMerge>
+                                    <feMergeNode/> // contient l'image d'espacement de floutage
+                                    <feMergeNode in="SourceGraphic"/> //contient l'element specifier pour flouter specifier ci-dessus
+                                </feMerge>
+                            </filter>
+                            <circle
+                            cx="65"
+                            cy="65"
+                            r="55"
+                            fill="rgb(31,41,55)"
+                            stroke='rgb(99,102,241)'
+                            stroke-width="15"
+                            stroke-dasharray="346"
+                            stroke-dashoffset=346
+                            stroke-linecap="round"
+                            />
+                            <circle
+                            style="filter:url(#cShadow)"
+                            cx="65"
+                            cy="65"
+                            r="50"
+                            fill="rgba(17,24,39)"
+                            stroke="transparent" 
+                        />
+                        <text id="percent" class="hello text-xl" x=45 y=60 fill="whitesmoke" >&nbsp&nbsp%</text>
+                        <text class="hello text-xs font-bold" x=51 y=90 fill="rgb(99,102,241)">CMS</text>
+                        </svg>
+                    </div>
+                    <div class="p-2 w-full text-center text-sm">
+                        <span class="inline-block mx-auto text-gray-200 font-semibold">Wordpress</span>
+                        <span class="inline-block mx-auto text-gray-200 font-semibold">Joomla</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="MoiDescription py-2">
+            <span class="text-lg block w-32 font-semibold shadow-inner text-center bg-gray-800 text-gray-300 tracking-wide rounded-tl-lg rounded-br-lg px-1 mx-4">Qui suis je?</span>
+            <div class="ownTestimonialCard p-3 pt-16 relative mx-auto w-11/12 max-w-lg  mt-16 rounded-xl bg-white bg-opacity-80 shadow-inner ">
+                <div class="imgBox absolute border-8 border-gray-800 -top-12  h-28 w-28 rounded-full overflow-hidden shadow-inner ring-inset ">
+                    <img class="h-full w-full object-cover " src="./image/image.jpg" alt="">
+                </div>
+                <div class="">
+                    <div class="textOwn tracking-wide text-sm job font-semibold leading-6 text-center ">
+                        "Fasciné et passionné par le code, J'aime réléver des défis et resoudre des problèmes. J'apprend sans cesse de nouvelles compétences dans l'initiative d'apporter des solutions aux problèmes quotidiens.
+                        <span>Je recherche activement une équipe <br> <span class="font-extrabold">"Dream Team"</span> laquelle intégrer en vue de m'épanouir et d'apporter mon aide.:)" </span>
+                        <span class="block my-2 name font-extrabold">
+                            A. Moukadim <br>
+                            <span class="text-xs font-light">Designer UI & Dev Web Junior </span> 
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/jquery-3.4.1.min.js"></script> 
+    <script src="./js/index.js"></script> 
+</body>
+</html>
